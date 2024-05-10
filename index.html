@@ -3,21 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/output.css">
     <title>Hi TailwindCSS</title>
 </head>
 <body>
     
     <!-- HEADER -->
-    <header>
-        <div>
+    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+        <div class="w-full h-full flex flex-col justify-center items-center">
             <img 
-                src="./assets/img02.jpg" alt=""
+                src="./assets/restaurante/hamb-1.png" alt=""
                 class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200"
-            >
+            />
+            <h1 class="text-3xl mt-2 mb-2 font-bold text-white">Dev Burguer</h1>
+            <span class="text-white font-medium">Av. 04, Tiradentes</span>
+
+            <div class="bg-green-600 px-2 py-1 rounded-lg mt-3" id="date-span">
+                <span class="text-white font-bold">Seg á Dom - 18:00 as 22:00</span>
+            </div>
         </div>
     </header>
     <!-- FIM HEADER -->
-    
+    <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
+        Conheça nosso menu
+    </h2>
+    <!-- Menu-->
+    <div id="menu">
+        <!-- Inicio Item-->
+        <main class="  
+            grid
+            sm:grid-cols-1 gap-7
+            md:grid-cols-2 md:gap-10
+            mx-auto max-w-7xl px-2 mb-16
+        ">
+            <div class="flex gap-2">
+                <img 
+                    src="./assets/restaurante/hamb-1.png" 
+                    alt="Hamburger Smash"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                >
+                <div>
+                    <p class="font-bold">Hamburguer Smash</p>
+                    <p class="text-sm">Pão levinho de fermentação natural da Trigo, burger 160g, queijo fresco, presunto defumado, bacon duplo, maionese da casa.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-1 ">
+                        <p class="font-bold text-lg">R$ 19,90</p>
+                        <button 
+                            class="bg-gray-900 px-2 rounded add-to-cart-btn"
+                            data-name="Hamburger Smash"
+                            data-price="19.90"
+                            >
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-2">
+                <img 
+                    src="./assets/restaurante/hamb-3.png" 
+                    alt="Hamburger Smash"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                >
+                <div>
+                    <p class="font-bold">Hamburguer Smash</p>
+                    <p class="text-sm">Pão levinho de fermentação natural da Trigo, burger 160g, queijo fresco, presunto defumado, bacon duplo, maionese da casa.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-1 ">
+                        <p class="font-bold text-lg">R$ 22,90</p>
+                        <button 
+                            class="bg-gray-900 px-2 rounded add-to-cart-btn"
+                            data-name="Hamburger Smash"
+                            data-price="19.90"
+                            >
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-2">
+                <img 
+                    src="./assets/restaurante/hamb-2.png" 
+                    alt="Hamburger Smash"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                >
+                <div>
+                    <p class="font-bold">Hamburguer Smash</p>
+                    <p class="text-sm">Pão levinho de fermentação natural da Trigo, burger 160g, queijo fresco, presunto defumado, bacon duplo, maionese da casa.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-1 ">
+                        <p class="font-bold text-lg">R$ 29,90</p>
+                        <button 
+                            class="bg-gray-900 px-2 rounded add-to-cart-btn"
+                            data-name="Hamburger Smash"
+                            data-price="19.90"
+                            >
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <!-- Fim Item-->
+    </div> 
 </body>
 </html>
